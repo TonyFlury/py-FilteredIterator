@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Py-filterediterator by TonyFlury</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Py-filterediterator</h1>
+        <p class="header">Extended Iterator wrap class, with filtering members.</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/TonyFlury/py-FilteredIterator/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/TonyFlury/py-FilteredIterator/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/TonyFlury/py-FilteredIterator">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/TonyFlury">TonyFlury</a></p>
+
+
+      </header>
+      <section>
+        <h1></h1>
+
+<h1>
+<a id="filterediterator-library" class="anchor" href="#filterediterator-library" aria-hidden="true"><span class="octicon octicon-link"></span></a>filterediterator Library</h1>
+
+<p>The filteredIterator library implements the FilteredIterator class. This class provides a iterator wrap, which can be initialised from any other iterator, Iterable or sequence, and provides easy to use chained filtering methods :</p>
+
+<h2>
+<a id="filterediteratorfilterediterator--" class="anchor" href="#filterediteratorfilterediterator--" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>filterediterator</em>.FilteredIterator(  )</h2>
+
+<p>Initialises the FilteredIterator wrap around the source iterable. On it's own there is no benefit to placing the Filter wrap around an existing iterable.</p>
+
+<h2>
+<a id="filterediteratorfilter--" class="anchor" href="#filterediteratorfilter--" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>FilteredIterator</em>.filter(  )</h2>
+
+<p>returns a modified Iterator which is filtered based on the predicate. The predicate is a callable which is passed the data item from the iterator. The item is retained in the iterator if and only if the predicate callable returns True for that item.</p>
+
+<h2>
+<a id="filterediteratordropwhile--" class="anchor" href="#filterediteratordropwhile--" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>FilteredIterator</em>.dropwhile(  )</h2>
+
+<p>returns a modified Iterator which is filtered based on the predicate. The predicate is a callable which is passed the data item from the iterator. The items are removed from the iterator while the predicate callable returns True. Once the predicate returns True, no future items are removed by dropwhile.</p>
+
+<h2>
+<a id="filterediteratortakewhile--" class="anchor" href="#filterediteratortakewhile--" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>FilteredIterator</em>.takewhile(  )</h2>
+
+<p>returns a modified Iterator which is filtered based on the predicate. The predicate is a callable which is passed the data item from the iterator. The items are retained in the iterator while the predicate callable returns True. Once the predicate returns False, the iterator Stops.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
